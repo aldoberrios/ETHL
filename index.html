@@ -13,24 +13,37 @@ h1,h2,h3,h4,h5,h6 {font-family:"Segoe UI",sans-serif}
 
 <!-- Navigation -->
 <div class="w3-top w3-bar w3-black">
-<a href="#home"    class="w3-bar-item w3-button">Home</a>
-<a href="#about"   class="w3-bar-item w3-button">About</a>
-<a href="#register" class="w3-bar-item w3-button">Register</a>
-<a href="#register" class="w3-bar-item w3-button">Programme</a>
-<a href="#"        class="w3-bar-item w3-button">Organisers</a>
-
-<a href="#contact" class="w3-bar-item w3-button w3-right">Contact</a>
-
+<a href="#"          class="w3-bar-item w3-button">Home</a>
+<a href="javascript:void(0)" class="w3-bar-item w3-button w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+<a href="#about"     class="w3-bar-item w3-hide-small w3-button">About</a>
+<a href="#register"  class="w3-bar-item w3-hide-small w3-button">Register</a>
+<a href="#register"  class="w3-bar-item w3-hide-small w3-button">Programme</a>
+<a href="#committee" class="w3-bar-item w3-hide-small w3-button">Organisers</a>
+<a href="#contact"   class="w3-bar-item w3-button w3-right">Contact</a>
 </div> 
+
+
+<!-- Navigation -->
+<div id="menudisplay" class="w3-bar-block w3-black w3-top w3-hide w3-hide-large w3-hide-medium">
+<a href="#"          class="w3-bar-item w3-hide-medium w3-button">Home</a>
+<a href="#about"     class="w3-bar-item w3-hide-medium w3-button">About</a>
+<a href="#register"  class="w3-bar-item w3-hide-medium w3-button">Register</a>
+<a href="#register"  class="w3-bar-item w3-hide-medium w3-button">Programme</a>
+<a href="#committee" class="w3-bar-item w3-hide-medium w3-button">Organisers</a>
+<a href="javascript:void(0)" class="w3-bar-item w3-button" onclick="myFunction()">&#10006;</a>
+</div> 
+
+
 
 <div class="w3-container w3-padding-64 w3-black w3-center">
 	<div class="w3-content">
-		<h1>ETHL - Edinburgh Theoretical Historical Linguistics</h1>
+		<h1 style="font-size:8em">ETHL</h1> 
+		<h1>Edinburgh Theoretical Historical Linguistics</h1>
 		<h2>2025 Workshop</h2>
 	</div>
 </div>
 
-<div class="w3-container w3-padding-64">
+<div id="about" class="w3-container w3-padding-64">
 	<div class="w3-content">
 		<h2>About</h2>
 
@@ -70,45 +83,42 @@ h1,h2,h3,h4,h5,h6 {font-family:"Segoe UI",sans-serif}
 </div>
 
 
-<div class="w3-container w3-padding-64">
+<div id="committee" class="w3-container w3-padding-64">
 	<div class="w3-content">
 		<h2>Committee</h2>
 		<p>ETHL is organised by PhD Students at the University of Edinburgh</p>
 
+	<div class="w3-row-padding w3-margin-top">
 
-  <div class="w3-row">
-  <div class="w3-col s6">
+	<div class="w3-half w3-center">
+		<div class="w3-card">
+			<img src="https://www.ed.ac.uk/sites/default/files/styles/uoe_profile_picture/public/20240913125534519.jpeg" style="height:150px">
+			<div class="w3-container">
+				<h4><a href="https://www.ed.ac.uk/profile/fae-hicks">Fae Hicks</a></h4>
+			</div>
+		</div>
+	</div>
 
-	  <div class="w3-card-4" style="width:50%">
-	    <img src="https://www.w3schools.com/w3css/img_snowtops.jpg" alt="Alps" style="width:100%">
-	    <div class="w3-container w3-center">
-	      <p>Fae Hicks</p>
-	    </div>
-	  </div>
+	<div class="w3-half w3-center">
+		<div class="w3-card">
+			<img src="https://aldoberrios.cl/img/perfil.jpg" style="height:150px">
+			<div class="w3-container">
+				<h4><a href="https://aldoberrios.cl/">Aldo Berríos Castillo</a></h4>
+			</div>
+		</div>
+	</div>
 
-  </div>
-  
-  <div class="w3-col s6">
+	</div>
 
-	  <div class="w3-card-4" style="width:50%">
-	    <img src="https://www.w3schools.com/w3css/img_snowtops.jpg" alt="Alps" style="width:100%">
-	    <div class="w3-container w3-center">
-	      <p>Aldo Berríos Castillo</p>
-	    </div>
-	  </div>
-
-  </div>
-
-
-  </div>
 
 	</div>
 </div>
 
 
-<footer class="w3-container w3-black w3-center">
+<footer id="contact" class="w3-container w3-black w3-center">
   <h5>Contact the organisers in their respective University of Edinburgh profile.</h5>
 </footer>
 
+<script src="https://aldoberrios.cl/corpus/assets/mobilenavigation.js"></script>
 </body>
 </html>
