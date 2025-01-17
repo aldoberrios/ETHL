@@ -18,23 +18,23 @@ h1,h2,h3,h4,h5,h6 {font-family:"Segoe UI",sans-serif}
 <body>
 
 <!-- Navigation -->
-<div class="w3-top w3-bar w3-black">
+<div class="w3-top w3-bar w3-black w3-bottombar w3-border-white">
 <a href="#"          class="w3-bar-item w3-button w3-hover-ethlblue">Home</a>
 <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-ethlblue w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
 <a href="#about"     class="w3-bar-item w3-hide-small w3-button w3-hover-ethlblue">Overview</a>
-<!-- <a href="#register"  class="w3-bar-item w3-hide-small w3-button w3-hover-ethlblue">Register</a> -->
-<a href="#register"  class="w3-bar-item w3-hide-small w3-button w3-hover-ethlblue">2025 Seminar</a>
+<a href="#register"  class="w3-bar-item w3-hide-small w3-button w3-hover-ethlblue">Register</a>
+<!-- <a href="#register"  class="w3-bar-item w3-hide-small w3-button w3-hover-ethlblue">2025 Seminar</a> -->
 <a href="#committee" class="w3-bar-item w3-hide-small w3-button w3-hover-ethlblue">Organisers</a>
 <a href="#contact"   class="w3-bar-item w3-button w3-right w3-hover-ethlblue">Contact</a>
 </div> 
 
 
 <!-- Navigation -->
-<div id="menudisplay" class="w3-bar-block w3-black w3-top w3-hide w3-hide-large w3-hide-medium">
+<div id="menudisplay" class="w3-bar-block w3-black w3-top w3-hide w3-hide-large w3-hide-medium w3-bottombar w3-border-white">
 <a href="#"          class="w3-bar-item w3-hide-medium w3-button">Home</a>
 <a href="#about"     class="w3-bar-item w3-hide-medium w3-button">Overview</a>
-<!-- <a href="#register"  class="w3-bar-item w3-hide-medium w3-button">Register</a> -->
-<a href="#register"  class="w3-bar-item w3-hide-medium w3-button">2025 Seminar</a>
+<a href="#register"  class="w3-bar-item w3-hide-medium w3-button">Register</a>
+<!-- <a href="#register"  class="w3-bar-item w3-hide-medium w3-button">2025 Seminar</a>-->
 <a href="#committee" class="w3-bar-item w3-hide-medium w3-button">Organisers</a>
 <a href="javascript:void(0)" class="w3-bar-item w3-button" onclick="myFunction()">&#10006;</a>
 </div> 
@@ -126,12 +126,14 @@ If you'd like to take part in ETHL 2025 Seminar, express your interest and/or su
 <div class="w3-container w3-padding-64 w3-ethlblue" id="snaptalks">
 	<div class="w3-content">
 
+<!--
 <h2>2025 Seminar</h2>
 
 	<p>ETHL is 'summer school' style event for historical linguists in theory and theoretical linguists interested in diachrony. ETHL will consist of four two-hour seminars led by an expert in theoretical historical linguistics with a focus on discussion. Each of the four seminars will address a different aspect of the interaction between historical linguistics and linguistic theory. </p>
 
 	<p>In addition to seminars we want to provide an opportunity for participants to present their work this will take the form of two snap talk sessions (more details on our website) - if you'd like to take part in this please submit an abstract. </p>
 
+-->
 
 	<h2>What is a ‘snap-talk’?</h2>
 	<p>We envision a snap-talk to be a theoretical version of a poster. Since ETHL is just a two day event we had thought of including a poster session but posters are not exactly amenable to theoretical work so we have come up with the concept of a 'snap-talk' session. </p>
@@ -143,7 +145,7 @@ If you'd like to take part in ETHL 2025 Seminar, express your interest and/or su
 
 
 
-<div id="committee" class="w3-container w3-padding-64  w3-text-ethlblue">
+<div id="committee" class="w3-container w3-padding-64 w3-text-ethlblue">
 	<div class="w3-content">
 		<h2>Committee</h2>
 		<p>ETHL is organised by PhD researchers at the University of Edinburgh</p>
@@ -171,7 +173,6 @@ If you'd like to take part in ETHL 2025 Seminar, express your interest and/or su
 			</div>
 		</div>
 	</div>
-
 	</div>
 
 
@@ -179,10 +180,19 @@ If you'd like to take part in ETHL 2025 Seminar, express your interest and/or su
 </div>
 
 
-<footer id="contact" class="w3-container w3-ethlblue w3-center">
-  <h5>Contact the organisers in their respective University of Edinburgh profiles.</h5>
-</footer>
+<div class="w3-container w3-padding-64 w3-ethlblue w3-bottombar w3-border-white" id="contact">
+	<div class="w3-content">
 
+  <h5>Contact the organisers in their respective University of Edinburgh profiles or by writing to:
+  <div class="w3-content w3-center w3-padding-16"> <strong>seminar [at] ethl [dot] uk</strong> </h5></div>
+	
+	</div>
+</div>
+
+<footer class="w3-container w3-black w3-center">
+  <h5>Edinburgh Theoretical Historical Linguistics. Updated on January 2025</h5>
+</footer>
 <script src="https://aldoberrios.cl/corpus/assets/mobilenavigation.js"></script>
+
 </body>
 </html>
