@@ -29,30 +29,48 @@ h1,h2,h3,h4,h5,h6 {font-family:"Segoe UI",sans-serif}
 <body>
 
 
-
-<!-- Navigation -->
-<div class="w3-top w3-bar w3-bottombar w3-border-white w3-black">
+<!-- Responsive collapsible bar -->
+<div class="w3-bar w3-border-white w3-black w3-bottombar w3-border-white ">
 <a href="#"          class="w3-bar-item w3-button w3-hover-ethlblue">Home</a>
-<a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-ethlblue w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
 <a href="#about"     class="w3-bar-item w3-hide-small w3-button w3-hover-ethlblue">Overview</a>
 <a href="#register"  class="w3-bar-item w3-hide-small w3-button w3-hover-ethlblue">Register</a>
 <a href="#programme"  class="w3-bar-item w3-hide-small w3-button w3-hover-ethlblue">Programme</a>
 <a href="#organisers" class="w3-bar-item w3-hide-small w3-button w3-hover-ethlblue">Organisers</a>
-<!-- <a href="#contact"   class="w3-bar-item w3-button w3-right w3-hover-ethlblue">Contact</a> : seminar[at]ethl[dot]uk -->
-<a href="#contact"   class="w3-bar-item w3-button w3-right w3-hover-ethlblue">Contact</a>
-<!-- <a href="mailto:seminar@ethl.uk"   class="w3-bar-item w3-button w3-right w3-hover-ethlblue">Contact email</a> -->
+<a href="#contact"   class="w3-bar-item w3-hide-small  w3-button w3-right w3-hover-ethlblue">Contact</a>
+<a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
 </div> 
 
 
 <!-- Navigation -->
-<div id="menudisplay" class="w3-bar-block w3-black w3-top w3-hide w3-hide-large w3-hide-medium w3-bottombar w3-border-white">
-<a href="#"          class="w3-bar-item w3-hide-medium w3-button">Home</a>
-<a href="#about"     class="w3-bar-item w3-hide-medium w3-button">Overview</a>
-<a href="#register"  class="w3-bar-item w3-hide-medium w3-button">Register</a>
-<a href="#programme"  class="w3-bar-item w3-hide-medium w3-button">Programme</a>
-<a href="#organisers" class="w3-bar-item w3-hide-medium w3-button">Organisers</a>
-<a href="javascript:void(0)" class="w3-bar-item w3-button" onclick="myFunction()">&#10006;</a>
+<div id="menudisplay" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
+<a href="#about"      class="w3-bar-item w3-button">Overview</a>
+<a href="#register"   class="w3-bar-item w3-button">Register</a>
+<a href="#plenaries"   class="w3-bar-item w3-button">Sessions</a>
+<a href="#programme"  class="w3-bar-item w3-button">Programme</a>
+<a href="#organisers" class="w3-bar-item w3-button">Organisers</a>
+<a href="#contact" class="w3-bar-item w3-button">Contact</a>
 </div> 
+
+
+
+<!-- Responsive collapsible bar -->
+<!-- <div class="w3-top w3-bar w3-bottombar w3-border-white w3-black"> -->
+<!-- <a href="#"          class="w3-bar-item w3-button w3-hover-ethlblue">Home</a> -->
+<!-- <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-ethlblue w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a> -->
+<!-- <a href="#about"     class="w3-bar-item w3-hide-small w3-button w3-hover-ethlblue">Overview</a> -->
+<!-- <a href="#register"  class="w3-bar-item w3-hide-small w3-button w3-hover-ethlblue">Register</a> -->
+<!-- <a href="#programme"  class="w3-bar-item w3-hide-small w3-button w3-hover-ethlblue">Programme</a> -->
+<!-- <a href="#organisers" class="w3-bar-item w3-hide-small w3-button w3-hover-ethlblue">Organisers</a> -->
+<!-- <a href="#contact"   class="w3-bar-item w3-button w3-right w3-hover-ethlblue">Contact</a> -->
+<!-- </div>  -->
+<!-- <div id="menudisplay" class="w3-bar-block w3-black w3-top w3-hide w3-hide-large w3-hide-medium w3-bottombar w3-border-white"> -->
+<!-- <a href="#"          class="w3-bar-item w3-hide-medium w3-button">Home</a> -->
+<!-- <a href="#about"     class="w3-bar-item w3-hide-medium w3-button">Overview</a> -->
+<!-- <a href="#register"  class="w3-bar-item w3-hide-medium w3-button">Register</a> -->
+<!-- <a href="#programme"  class="w3-bar-item w3-hide-medium w3-button">Programme</a> -->
+<!-- <a href="#organisers" class="w3-bar-item w3-hide-medium w3-button">Organisers</a> -->
+<!-- <a href="javascript:void(0)" class="w3-bar-item w3-button" onclick="myFunction()">&#10006;</a> -->
+<!-- </div>  -->
 
 
 
@@ -67,16 +85,14 @@ h1,h2,h3,h4,h5,h6 {font-family:"Segoe UI",sans-serif}
 </div>
 
 
-<!-- APPLY NOW LINK -->
+<!-- APPLY NOW LINK 
 <div class="w3-display-container w3-animate-opacity">
   <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
-    <!-- <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-pplsred w3-hover-white" title="Go To W3.CSS">CALL FOR ABSTRACTS</button> -->
     <button onclick="location.href='https://www.epay.ed.ac.uk/conferences-and-events/college-of-humanities-and-social-science/school-of-philosophy-psychology-and-language-sciences/edinburgh-theoretical-historical-linguistics-seminar'" class="w3-button w3-xlarge w3-theme w3-pplsred w3-white w3-round-large" title="Click here to register and/or pay">REGISTER & PAY</button>
-    <!--<button onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSeksuolwrmISl1HGl4uUcErMdNRAMCabOUCdn4zjdUlpkCamQ/viewform?usp=preview'" class="w3-button w3-xlarge w3-theme w3-pplsred w3-brown w3-round-large" title="Go To W3.CSS">APPLY NOW</button> -->
   </div>
 </div>
 
-
+-->
 
 <div id="about" class="w3-container w3-padding-64">
 	<div class="w3-content">
@@ -122,25 +138,17 @@ h1,h2,h3,h4,h5,h6 {font-family:"Segoe UI",sans-serif}
 
 
 
-	<!--<p>The registration process and programme will be announced in due time.</p>	
+	<!--<p>The registration process and programme will be announced in due time.</p> -->
 
-
-	<h2>Session leaders</h2>
-	Prof. George Walkden 
-	Dr Ranjan San 
-	Prof. Patrick Honeybone
-	Prof. Michelle Sheehan 
-	Dr Theresa Biberauer
-
-	photo bio 
-
-			-->
+		<div class="w3-panel w3-pale-blue w3-leftbar w3-border-blue">	<p>The registration process is now complete! See you on the 16th!</p></div>
 
 		<p>Registration will be free for members of the University of Edinburgh and £10 for everyone else. Conference dinner is £25.00 for external and UoE attendees.</p>
 
-			<div class="w3-bar">
+
+
+		<!--	<div class="w3-bar">
     		<button onclick="location.href='https://www.epay.ed.ac.uk/conferences-and-events/college-of-humanities-and-social-science/school-of-philosophy-psychology-and-language-sciences/edinburgh-theoretical-historical-linguistics-seminar'" class="w3-margin-top w3-button w3-xlarge w3-theme w3-indigo w3-round-large" title="Register">REGISTER & PAY</button>
-			</div>			
+			</div>			-->
 
 
 <!--
