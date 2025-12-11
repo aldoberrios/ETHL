@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .w3-ethlblue,.w3-hover-ethlblue:hover{color:#fff!important;background-color:#101553!important}
 .w3-text-ethlblue,.w3-hover-text-ethlblue:hover{color:#101553!important}
 .w3-text-ethlred,.w3-hover-text-ethlred:hover{color:#b83d63!important}
@@ -47,4 +51,20 @@
   border: 2px solid #ffffff;   /* ← white perimeter */
 }
 
+/*  GOOGLE MAP BEHAVIOUR THING */
 
+.map-responsive {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+}
+
+.map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
