@@ -2,3 +2,49 @@
 .w3-text-ethlblue,.w3-hover-text-ethlblue:hover{color:#101553!important}
 .w3-text-ethlred,.w3-hover-text-ethlred:hover{color:#b83d63!important}
 .red_color {background: #b83d63}
+.ethlblue-gradient {
+  background: linear-gradient(to top, #101553 0%, #0c103f 40%, #050827 100%) !important;color:#fff!important;
+}
+
+.ethl-logo {
+  width: 128px;              /* adjust size as needed */
+  height: 128px;
+  border-radius: 50%;        /* makes it a circle */
+  background-color: #101553; /* ETHL blue */
+  color: #fff;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Georgia", "Times New Roman", serif; /* serif like your logo */
+  font-size: 3.2rem;          /* tweak for size */
+  line-height: .9;           /* tight lines, like the logo */
+  text-align: center;
+  margin: 0 auto;  /* ← this centers the block */
+  border: 3px solid #ffffff;   /* ← white perimeter */
+
+}
+
+.ethl-logo-small {
+  width: 60px;              /* adjust size as needed */
+  height: 60px;
+  border-radius: 50%;        /* makes it a circle */
+  background-color: #101553; /* ETHL blue */
+  color: #fff;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Georgia", "Times New Roman", serif; /* serif like your logo */
+  font-size: 1.5rem;          /* tweak for size */
+  line-height: .85;           /* tight lines, like the logo */
+  text-align: center;
+  margin: 0 auto;  /* ← this centers the block */
+  border: 2px solid #ffffff;   /* ← white perimeter */
+}
+
+
