@@ -82,3 +82,57 @@ body {
   font-family:serif;
 
 }
+
+
+  /* Make W3 columns behave like a neat flex grid (equal heights) */
+  .teacher-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -8px;   /* matches w3-row-padding-ish gutters */
+    margin-right: -8px;
+  }
+  .teacher-col {
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    width: 33.3333%;     /* 3 across on desktop */
+  }
+  /* tablet */
+  @media (max-width: 992px) {
+    .teacher-col { width: 50%; }  /* 2 across */
+  }
+  /* mobile */
+  @media (max-width: 600px) {
+    .teacher-col { width: 100%; } /* 1 across */
+  }
+
+  .teacher-card {
+    height: 100%;
+    border-radius: 14px;
+  }
+  .teacher-name {
+    margin: 0;
+    font-size: 26px;
+    line-height: 1.15;
+  }
+  .teacher-inst {
+    margin: 10px 0 0 0;
+    font-size: 18px;
+    opacity: 0.75;
+    line-height: 1.35;
+  }
+
+
+.teacher-link {
+  text-decoration: none;
+  color: inherit;
+}
+.teacher-link:hover {
+  text-decoration: underline;
+}
+.link-icon {
+  font-size: 0.85em;
+  opacity: 0.6;
+  margin-right: 6px;
+}
