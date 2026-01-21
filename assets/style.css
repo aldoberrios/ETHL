@@ -2,6 +2,78 @@ body {
   overflow-x: hidden;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  letter-spacing: 0.015em;
+  margin-top: 0;
+}
+
+.ethl-h2 {
+  display: block;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin: 0.3em 0 0.3em 0;
+  color: #ffffff;
+}
+
+
+h2 {
+  font-size: 2.6rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.75em;
+  position: relative;
+}
+
+
+h2::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 3px;
+  background: #f4c430;
+  margin-top: 10px;
+}
+
+
+h3 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 0.015em;
+  margin-bottom: 0.5em;
+}
+
+.ethl-hero-title {
+  font-size: 6.5rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.ethl-hero-subtitle {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+}
+
+.w3-ethlblue h2::after {
+  background: #ffdd55;
+}
+
+.w3-ethlblue h2,
+.w3-ethlblue h3 {
+  color: #ffffff;
+}
+
+.teacher-name {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+
+
 .w3-ethlblue,.w3-hover-ethlblue:hover{color:#fff!important;background-color:#101553!important}
 .w3-text-ethlblue,.w3-hover-text-ethlblue:hover{color:#101553!important}
 .w3-text-ethlred,.w3-hover-text-ethlred:hover{color:#b83d63!important}
@@ -135,4 +207,23 @@ body {
   font-size: 0.85em;
   opacity: 0.6;
   margin-right: 6px;
+}
+
+
+.ethl-register-btn {
+  background: linear-gradient(135deg, #f4c430, #ffdd55);
+  color: #1a1a1a !important;
+  padding: 18px 40px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+  border: none;
+  transition: all 0.25s ease;
+}
+
+.ethl-register-btn:hover {
+  background: linear-gradient(135deg, #ffdd55, #f4c430);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.45);
+  transform: translateY(-2px);
 }
