@@ -83,45 +83,13 @@ h3 {
 }
 
 .ethl-logo {
-  width: 128px;              /* adjust size as needed */
-  height: 128px;
-  border-radius: 50%;        /* makes it a circle */
-  background-color: #101553; /* ETHL blue */
-  color: #fff;
-  
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  font-family: "Georgia", "Times New Roman", serif; /* serif like your logo */
-  font-size: 3.2rem;          /* tweak for size */
-  line-height: .9;           /* tight lines, like the logo */
+  font-family: serif;
+  font-size: clamp(3.5rem, 12vw, 8rem);
+  line-height: 1;
+  margin: 0;
   text-align: center;
-  margin: 0 auto;  /* ← this centers the block */
-  border: 3px solid #ffffff;   /* ← white perimeter */
-
 }
 
-.ethl-logo-small {
-  width: 60px;              /* adjust size as needed */
-  height: 60px;
-  border-radius: 50%;        /* makes it a circle */
-  background-color: #101553; /* ETHL blue */
-  color: #fff;
-  
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  font-family: "Georgia", "Times New Roman", serif; /* serif like your logo */
-  font-size: 1.5rem;          /* tweak for size */
-  line-height: .85;           /* tight lines, like the logo */
-  text-align: center;
-  margin: 0 auto;  /* ← this centers the block */
-  border: 2px solid #ffffff;   /* ← white perimeter */
-}
 
 /*  GOOGLE MAP BEHAVIOUR THING */
 
@@ -226,4 +194,16 @@ h3 {
   background: linear-gradient(135deg, #ffdd55, #f4c430);
   box-shadow: 0 12px 28px rgba(0,0,0,0.45);
   transform: translateY(-2px);
+}
+
+
+.ethl-note {
+  background-color: rgba(255,255,255,0.08);
+  border-left: 4px solid #ffd966; /* ETHL yellow accent */
+  padding: 12px 16px;
+  font-size: 0.95em;
+}
+.ethl-note i {
+  margin-right: 6px;
+  opacity: 0.8;
 }
