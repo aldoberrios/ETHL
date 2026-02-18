@@ -171,6 +171,7 @@ h3 {
 .teacher-link:hover {
   text-decoration: underline;
 }
+
 .link-icon {
   font-size: 0.85em;
   opacity: 0.6;
@@ -206,4 +207,29 @@ h3 {
 .ethl-note i {
   margin-right: 6px;
   opacity: 0.8;
+}
+
+
+.faculty-card {
+  transition: all 0.25s ease;
+  border: 1px solid #f0f0f0;
+}
+
+.faculty-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+}
+
+.faculty-name {
+  color: black !important;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.faculty-inst a {
+  /* text-decoration: none; */
+}
+
+.faculty-inst a:hover {
+  text-decoration: underline;
 }
