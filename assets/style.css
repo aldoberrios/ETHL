@@ -82,6 +82,17 @@ h3 {
   background: linear-gradient(to top, #101553 0%, #0c103f 40%, #050827 100%) !important;color:#fff!important;
 }
 
+.w3-ethl-dark-gradient {
+  background: linear-gradient(135deg, #1e2022 0%, #101553 100%) !important;
+  color: #ffffff !important;
+}
+
+.w3-ethl-light-gradient {
+  background: linear-gradient(135deg, #fbf4db 0%, #ffffff 100%) !important;
+  color: #101553 !important; /* Changes text to dark blue for beautiful contrast */
+}
+
+
 .ethl-logo {
   font-family: serif;
   font-size: clamp(3.5rem, 12vw, 8rem);
@@ -232,4 +243,33 @@ h3 {
 
 .faculty-inst a:hover {
   text-decoration: underline;
+}
+
+
+/* ==========================================================================
+   AUTOMATIC ALTERNATING GRADIENTS
+   ========================================================================== */
+
+/* 1. Base rule: Apply the Light Gradient to ALL non-dark containers by default */
+div.w3-container:not(.w3-ethlblue):not(.ethlblue-gradient) {
+  background: linear-gradient(135deg, #fbf4db 0%, #ffffff 100%) !important;
+  color: #101553 !important; 
+}
+
+/* 2. Target the headers inside the light gradient to make sure they match the dark blue text */
+div.w3-container:not(.w3-ethlblue):not(.ethlblue-gradient) h2,
+div.w3-container:not(.w3-ethlblue):not(.ethlblue-gradient) h3 {
+  color: #101553 !important;
+}
+
+/* 3. Alternating rule: Turn every SECOND light container into the Dark Gradient */
+div.w3-container:not(.w3-ethlblue):not(.ethlblue-gradient):nth-of-type(even) {
+  background: linear-gradient(135deg, #1e2022 0%, #101553 100%) !important;
+  color: #ffffff !important;
+}
+
+/* 4. Ensure headers turn white inside the automatically generated dark sections */
+div.w3-container:not(.w3-ethlblue):not(.ethlblue-gradient):nth-of-type(even) h2,
+div.w3-container:not(.w3-ethlblue):not(.ethlblue-gradient):nth-of-type(even) h3 {
+  color: #ffffff !important;
 }
