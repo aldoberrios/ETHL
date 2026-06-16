@@ -273,3 +273,71 @@ div.w3-container:not(.w3-ethlblue):not(.ethlblue-gradient):nth-of-type(even) h2,
 div.w3-container:not(.w3-ethlblue):not(.ethlblue-gradient):nth-of-type(even) h3 {
   color: #ffffff !important;
 }
+
+
+/* ==========================================================================
+   MOBILE TIMELINE STYLES
+   ========================================================================== */
+
+.class-timeline-mobile {
+  margin-top: 20px;
+}
+
+.mobile-day-card {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.mobile-day-header {
+  background-color: #1d0a4f;
+  color: white !important;
+  padding: 10px 14px;
+  font-weight: bold;
+  font-size: 1.1em;
+  letter-spacing: 0.05em;
+}
+
+.mobile-session {
+  padding: 12px 14px;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95em;
+}
+
+.mobile-session:last-child {
+  border-bottom: none;
+}
+
+.mobile-session strong {
+  display: inline-block;
+  width: 125px;       /* Increased from 95px to prevent text wrapping */
+  color: #444;
+  vertical-align: top; /* Keeps text beautifully aligned if the instructor name gets long */
+}
+
+/* Matching the Desktop Table Colors */
+.p-honeybone { background-color: #e2f5f5; color: #004d4d !important; font-weight: 500; }
+.b-molineaux { background-color: #f3e8ff; color: #4a148c !important; font-weight: 500; }
+.a-breitbarth { background-color: #fff1e6; color: #7a3e00 !important; font-weight: 500; }
+.d-gopal     { background-color: #e6f4ea; color: #137333 !important; font-weight: 500; }
+.a-calabrese { background-color: #fce8e6; color: #550758 !important; font-weight: 500; }
+.t-biberauer { background-color: #fef7e0; color: #b06000 !important; font-weight: 500; }
+.m-hale      { background-color: #e8f0fe; color: #1a73e8 !important; font-weight: 500; }
+.m-opensession { background-color: #2982c9; color: white !important; }
+
+/* Break, Lunch, and Social highlights */
+.m-break, .m-lunch { 
+  background-color: #142736; 
+  color: #fff !important; 
+}
+.m-break strong, .m-lunch strong { color: #fff; }
+
+.m-social {
+  background-color: #f9f9f9;
+  color: #333 !important;
+  font-style: italic;
+}
+.m-social strong { font-style: normal; }
