@@ -341,3 +341,68 @@ div.w3-container:not(.w3-ethlblue):not(.ethlblue-gradient):nth-of-type(even) h3 
   font-style: italic;
 }
 .m-social strong { font-style: normal; }
+
+
+/* Heading */
+.course-heading {
+    margin-top: 15px;
+}
+
+/* Grid Layout container */
+.course-grid {
+    margin-top: 24px; 
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+}
+
+/* Base Card Styles */
+.course-card {
+    padding: 16px; 
+    background-color: #fdfdfd; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid var(--accent); /* Uses the inline variable */
+}
+
+/* Internal Card Text elements */
+.speaker-name {
+    font-size: 1.1em;
+    color: var(--accent); /* Inherits the custom accent color dynamic per card */
+}
+
+.talk-title {
+    margin: 8px 0 0 0; 
+    color: #333; 
+    font-style: italic;
+}
+
+/* PDF link wrapper groups */
+.download-links {
+    margin: 14px 0 0 0;
+}
+
+.category-label {
+    color: var(--accent);
+}
+
+/* PDF Button styling */
+.download-links a {
+    display: inline-block; 
+    padding: 6px 14px; 
+    background-color: var(--accent); /* Matches button to its specific card color */
+    color: #ffffff; 
+    text-decoration: none; 
+    font-size: 0.85em; 
+    font-weight: 500; 
+    letter-spacing: 0.03em; 
+    text-transform: uppercase; 
+    border-radius: 4px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); 
+    transition: all 0.2s ease;
+}
+
+/* Interactive hover state for links */
+.download-links a:hover {
+    filter: brightness(1.15);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
